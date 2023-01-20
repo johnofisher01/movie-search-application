@@ -4,7 +4,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-        <span className='header'>Movie Store</span>
+        <span className='header'>Vision Box</span>
         </div>
     )
 }
