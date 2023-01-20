@@ -22,7 +22,7 @@ const SimpleBottomNavigation =() => {
         <BottomNavigationAction style={{color:"black"}} label="Trending" icon={<TrendingUpIcon />} />
         <BottomNavigationAction style={{color:"black"}} label="Movies" icon={<TheatersIcon />} />
         <BottomNavigationAction style={{color:"black"}} label="TV Series" icon={<TvIcon />} />
-        <BottomNavigationAction style={{color:"black"}} label="Nearby" icon={<LocationOnIcon />} />
+        <BottomNavigationAction style={{color:"black"}} label="Search" icon={<LocationOnIcon />} />
       </BottomNavigation>
     </Box>
   );
