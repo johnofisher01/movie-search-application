@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/Header'
+import SimpleBottomNavigation from './components/MainNav';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      test commit git
-    </div>
+    <>
+    <Header/>
+    <div className="app"></div>
+    <SimpleBottomNavigation/>
+    </>
   );
 }
 
