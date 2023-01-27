@@ -7,9 +7,7 @@ import { Container } from '@mui/material';
 import Trending from './Pages/Trending/Trending';
 import Movies from './Pages/Movies/Movies';
 import Search from './Pages/Search/Search';
-import Series from './Pages/Series/Series'
-
-
+import Series from './Pages/Series/Series';
 
 function App() {
   return (
