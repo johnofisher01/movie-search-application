@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
+import SingleContent from  '../../components/SingleContent/SingleContent'
 
 const Trending = () => {
     const [content, setContent]=useState([]);
@@ -9,7 +10,7 @@ const Trending = () => {
         const {data} = await axios.get(
             `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}`
         );
-       // console.log(data)
+       console.log(data.results)
         setContent(data.results)
         //destructuring everything out of return o the promise - data
     }
@@ -20,9 +21,7 @@ const Trending = () => {
         <div>
             <span className='pageTitle'></span>
             <div className='trending'>
-                {content && content.map((c)=> {
-                    console.log(c)
-                })}
+                {content && content.map((c)=> <SingleContent key={c.id} id={c.id} poster={c.poster_path} title={c.title || c.name}/>)}
             </div>
         </div>
     )
