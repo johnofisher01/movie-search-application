@@ -21,7 +21,7 @@ const Trending = () => {
         <div>
             <span className='pageTitle'></span>
             <div className='trending'>
-                {content && content.map((c)=> <SingleContent key={c.id} id={c.id} poster={c.poster_path} title={c.title || c.name}/>)}
+                {content && content.map((c)=> <SingleContent key={c.id} id={c.id} poster={c.poster_path} title={c.title || c.name} date={c.releasedate || c.first_air_date} media_type={c.media_type}/>)}
             </div>
         </div>
     )
