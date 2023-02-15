@@ -1,10 +1,19 @@
 import React from 'react'
+import { img_300 } from '../../config/config'
+import { unavailable } from '../../config/config'
 
-const SingleContent = () => {
+const SingleContent = ({
+  id,
+  poster,
+  title,
+  date,
+  media_type,
+  vote_average
+}) => {
   return (
     <div>
-      CARS
-    </div>
+      <img src={poster? `${img_300}${poster}` : unavailable}  />
+    </div> 
   )
 }
 
