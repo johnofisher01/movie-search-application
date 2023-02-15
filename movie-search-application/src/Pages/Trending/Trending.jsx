@@ -2,6 +2,7 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 import SingleContent from  '../../components/SingleContent/SingleContent'
+import './Trending.css'
 
 const Trending = () => {
     const [content, setContent]=useState([]);
@@ -15,7 +16,7 @@ const Trending = () => {
         //destructuring everything out of return o the promise - data
     }
     useEffect(() => {
-       fetchTrending()
+       fetchTrending() 
     }, [])
     return ( 
         <div>
