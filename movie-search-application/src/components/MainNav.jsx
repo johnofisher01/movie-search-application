@@ -20,7 +20,7 @@ const navigate = useNavigate()// history is part of react router dom
       }, [value, navigate])
 
   return (
-    <Box sx={{ width: '100%', position:'fixed',bottom:0,backgroundColour:'#2d313a' }}>
+    <Box sx={{ zIndex:'2',width: '100%', position:'fixed',bottom:0,backgroundColour:'#2d313a' }}>
       <BottomNavigation
         showLabels
         value={value}
